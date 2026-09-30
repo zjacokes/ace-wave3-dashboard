@@ -1,0 +1,44 @@
+form_name,control_condition
+ace_wave_3_demographics_selfreport_19,[int_age]>=228
+promis_general_life_satisfaction_short_form_5a,[int_age]>=228
+promis_meaning_and_purpose_short_form_4a,[int_age]>=228
+ace_wave_3_demographics_self_report_1218_yo,[int_age]<228
+promis_pediatric_life_satisfaction_short_form_4a,[int_age]<228
+promis_pediatric_meaning_and_purpose_short_form_4a,[int_age]<228
+inperson_dsm5_child_selfreport,[int_age]<216
+inperson_dsm5_adult_selfreport,[int_age]>=216
+scq_lifetime_informantreport,"[parent]=1 and [group]=1"
+inperson_dsm5_child_informantreport,"[parent]=1 and [int_age]<216"
+ace_wave_3_demographics_informantreport,"[parent]=1 and [int_age]<228"
+staff_brief2_parent_form_shiny_app_upload,"[parent]=1 and [int_age]<228"
+srs2,"[parent]=1 and [int_age]<228"
+staff_briefa_informant_report_shiny_app_upload,"[parent]=1 and [int_age]>=228"
+staff_srs2_adult_informant_report_shiny_app_upload,"[parent]=1 and [int_age]>=228"
+pds_selfreport_male_version_2023,[sex]=1
+pds_selfreport_female_version_2023,[sex]=2
+combined_pds_another_assigned_sex,[sex]=3
+after_visit_ados_participant_followup,"[ados_module]=2 or [ados_module]=3 or [ados_module]=4"
+inperson_cbcl,"# returning ASD, TD, or US with informant under 19
+([asd_group]=4 or [group]=2 or [group]=3) and [parent]=1 and [int_age]<228"
+staff_meddrug_form_screening,1=0
+staff_meddrug_form_behavioral_visit,1=0
+staff_meddrug_form_fmri_visit_1,1=0
+inperson_dsm5_asd_criteria_clinician,1=0
+inactive_survey_basic_info,1=0
+inactive_survey_pds_selfreport,1=0
+inactive_survey_wave_3_neuroimaging_session_notes,1=0
+inactive_survey_imaging_notes,1=0
+inactive_survey_history_genetic_testing,1=0
+inactive_survey_dcc_imaging,1=0
+abas3_shiny_upload,1=0
+inperson_abcl,"# returning ASD, TD, or US with informant age 19+
+([asd_group]=4 or [group]=2 or [group]=3) and [parent]=1 and [int_age]>=228"
+asqol_19,"[group]=1 and [int_age]>=228"
+inperson_asaa,"[group]=1 and [int_age]>=228"
+asqol_1618,"[group]=1 and [int_age]<228"
+inperson_ascasd,"[group]=1 and [int_age]<228"
+lifetime_count_of_psychiatric_diagnoses_informantr,"[group]=1 and [parent]=1 and [int_age]<228"
+inperson_ados_participant_feedback_questionnaire,"[ados_module]=3 or [ados_module]=4"
+inperson_bosa_participant_feedback_questionnaire,[ados_module]=2
+inperson_ados_module_3,[ados_module]=3
+inperson_ados_module_4,"[ados_module]=4 or [ados_module]=2"

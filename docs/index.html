@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'; frame-src blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>ACE Wave 3 dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="container" aria-labelledby="title">
+      <div class="eyebrow">AUTISM CENTERS OF EXCELLENCE · WAVE 3</div>
+      <h1 id="title">Your report. Ready to review.</h1>
+      <p class="intro">Drop your REDCap report <strong>16779</strong> export to build the ACE Wave 3 dashboard.</p>
+      <p class="privacy"><span aria-hidden="true">▣</span> Your file stays on this computer. Nothing is uploaded.</p>
+      <input type="file" id="fileInput" accept=".csv,text/csv" hidden>
+      <button type="button" id="dropArea" class="drop" aria-controls="output">
+        <span class="drop-icon" aria-hidden="true">↓</span>
+        <strong id="fileLabel">Drag &amp; drop the report CSV here</strong>
+        <span class="browse">or click to browse</span>
+      </button>
+      <p class="hint">In REDCap, choose <strong>Raw data</strong> and <strong>Raw headers</strong>. Use the original download.</p>
+      <input type="file" id="dictInput" accept=".csv,text/csv" hidden>
+      <button type="button" id="dictArea" class="drop small"><span id="dictLabel">Optional: add the data dictionary CSV</span><span class="browse">Checks the report’s code definitions</span></button>
+      <button id="clearDict" type="button" hidden>Remove dictionary</button>
+      <div id="status" role="status" aria-live="polite"><p>Getting ready…</p></div>
+      <progress id="progress" aria-label="Preparing dashboard"></progress>
+      <p class="hint">The first run may take a little longer while the local Python tools load.</p>
+      <footer id="version">ACE Wave 3 dashboard · Draft definitions</footer>
+    </section>
+    <section id="output" aria-label="Dashboard results" aria-busy="false">
+      <div class="results-heading"><div><p class="eyebrow">READY TO REVIEW</p><h2>ACE Wave 3 dashboard</h2></div><span id="summary"></span></div>
+      <div id="warnings" role="status"></div>
+      <div class="downloads">
+        <a id="downloadDashboard" class="download-csv-btn">Download dashboard.html</a>
+        <a id="downloadNumeric" class="download-csv-btn">Numeric CSV</a>
+        <a id="downloadAudit" class="download-csv-btn">Audit JSON</a>
+      </div>
+      <div class="secondary"><a id="openDashboard" target="_blank" rel="noopener">Open in new tab ↗</a><a id="downloadTable1">Download Table 1 HTML</a><button type="button" id="print">Print / save as PDF</button></div>
+      <iframe id="dashboardFrame" title="ACE Wave 3 data quality dashboard" allow="clipboard-write" sandbox="allow-scripts allow-same-origin allow-modals allow-downloads"></iframe>
+      <p class="hint">These downloads contain aggregate results. Table 1 definitions remain Draft.</p>
+    </section>
+  </main>
+  <noscript>This page needs JavaScript to run Python locally and build the dashboard.</noscript>
+</body>
+</html>

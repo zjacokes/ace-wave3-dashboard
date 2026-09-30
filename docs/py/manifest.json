@@ -1,0 +1,12 @@
+{
+  "browser_bridge.py": "aa8f5332f6ad45ecbe7304e1841dcd811072a4d0f951a998a92e072be865a2bf",
+  "config.py": "6bc872f504e381bfa23a5210160fedd45dfa54b0f2e85731a834f7abef53a955",
+  "form_display_logic.csv": "77b73b3c933c1c9d31e42504d0b724c48724a6e92eb948626722e0c5efb0c58c",
+  "pipeline.py": "0fb8f77ca5fce6ea47483152e72979776b77040b4da5b9f9520fc49bcc1f4aa9",
+  "redcap_logic.py": "b8a0033dc8e568a545b72b5e866d0440b54f647f8fb83617661bec5b2e8af246",
+  "report_core.py": "557b66c08ba2afdf844d6e30e3bed9beef59fded6839c1c56f1ae8c0c8e7ed4c",
+  "survey_completeness.py": "7c645071f18919f18c707ac3f2244b8272e25a20256525b79de5a52f0dba1cc1",
+  "survey_queue_logic.csv": "0bbc750f1cf21ef3793d3f443eae6320c8121caaaf01352c5b56c5a48980af10",
+  "table1.py": "c20d500b4bfc64c6724e8b28630f55c8048f38a7a81ff639f1ce679522ef3bc5",
+  "table1_crosswalk.csv": "123ee5b09cee27c9adfd2564db510f1900af7990e3942a30985db8a14e196f51"
+}

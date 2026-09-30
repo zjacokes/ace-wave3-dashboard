@@ -1,0 +1,22 @@
+form_name,active,condition_surveycomplete_form_name,condition_andor,condition_logic,auto_start
+ace_wave_3_demographics_selfreport_19,1,start_page,AND,[int_age]>=228,0
+ace_wave_3_demographics_self_report_1218_yo,1,start_page,AND,[int_age]<228,0
+lifetime_count_of_psychiatric_diagnoses_selfreport,1,start_page,AND,"[group]=1 and [int_age]>=228",0
+pds_selfreport_male_version_2023,1,start_page,AND,[sex]=1,0
+pds_selfreport_female_version_2023,1,start_page,AND,[sex]=2,0
+combined_pds_another_assigned_sex,1,start_page,AND,[sex]=3,0
+selfassessment_of_autistic_traits,1,start_page,AND,[int_age]>=192,0
+cati,1,start_page,AND,[int_age]>=192,0
+raads14_screen,1,start_page,AND,[group]=1,0
+friendship_questionnaire,1,start_page,AND,,0
+promis_general_life_satisfaction_short_form_5a,1,start_page,AND,[int_age]>=216,0
+promis_meaning_and_purpose_short_form_4a,1,start_page,AND,[int_age]>=216,0
+promis_pediatric_life_satisfaction_short_form_4a,1,start_page,AND,[int_age]<216,0
+promis_pediatric_meaning_and_purpose_short_form_4a,1,start_page,AND,[int_age]<216,0
+asqol_1618,1,start_page,AND,"[group]=1 and ([int_age]>=192 and [int_age]<228)",0
+asqol_19,1,start_page,AND,"[group]=1 and [int_age]>=228",0
+whoqolbref_physical_domain,1,start_page,AND,"([group] = 1 AND [int_age]>=192) OR (([int_age] >= 180) AND ([group] = 2 OR [group] = 3))",0
+isq8,1,start_page,AND,,0
+ace_wave_3_demographics_informantreport,1,start_page,AND,"[parent]=1 and [int_age]<228",0
+lifetime_count_of_psychiatric_diagnoses_informantr,1,start_page,AND,"[parent]=1 and [int_age]<228 and [group]=1",0
+scq_lifetime_informantreport,1,start_page,AND,"[parent]=1 and [group]=1",0
